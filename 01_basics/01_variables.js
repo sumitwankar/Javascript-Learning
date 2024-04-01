@@ -2,16 +2,16 @@ const accountId = 134231
 let accountEmail = "thisisemail@gmail.com"
 var accountPassword = "98231"
 accountCity = "Nagpur"
-let accountState;
+let accountState
 
 // accountId = 100 // not allowed because const value always constants
 
+// console.log(accountId);
 
 accountEmail = "changedemail@gmail.com"
 accountPassword = "00000"
 accountCity = "Mumbai"
 
-// console.log(accountId);
 console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
 
 /*
