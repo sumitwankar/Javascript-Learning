@@ -38,5 +38,52 @@ let booleanIsLogged = Boolean(isLoggedIn)
 let someNumber = 123
 
 let checkThis = String(someNumber)
-console.log(checkThis);
-console.log(typeof(checkThis));
+// console.log(checkThis);
+// console.log(typeof(checkThis));
+
+// **********OPERATIONS*********** 
+
+let value = 3
+let negValue = -value
+// console.log(negValue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);
+// console.log(2/3);
+// console.log(2%3);
+
+let str1 = "hello"
+let str2 = " pro"
+
+let str3 = str1 + str2
+// console.log(str3);
+
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 2);
+// console.log(1 + 2 + "2");
+
+// console.log( (3 + 4) * 5 % 3); // bad code
+
+// console.log(+true);
+// console.log(+"");
+
+let num1, num2, num3
+num1 = num2 = num3 = 2 + 2  // bad code
+
+
+let gameCounter = 100
+++gameCounter;
+// console.log(gameCounter);
+
+let a = 5  
+let b = ++a;
+
+// console.log(a, b); // 6 6
+
+let y = 10
+let z = y++;
+
+// console.log(y, z); // 11 10
