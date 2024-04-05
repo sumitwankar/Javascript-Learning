@@ -45,3 +45,29 @@ const myFunction = function(){
 // object = object
 // array = object
 // function = function(object)
+
+// Stack (Primitive) = it is use copy value
+// Heap (Non-Primitive) = it is use original value
+
+
+// Stack (Primitive) example 
+let myNumber = 12345
+let anotherNumber = myNumber
+anotherNumber = 98765 
+
+console.log(myNumber);
+console.log(anotherNumber);
+
+// Heap (Non-Primitive) example
+let userOne = {
+    email: "qwerty@mail.com",
+    pass: "12345",
+    upi: "user@sbi"
+}
+
+let userTwo = userOne
+
+userTwo.email = "zxcvbnm@mail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
