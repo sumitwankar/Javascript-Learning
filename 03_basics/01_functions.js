@@ -49,7 +49,42 @@ function loggedIn(username = "Ron") {  // default value
 // console.log(loggedIn("Sumit"))
 // console.log(loggedIn()) // undefined logged in
 
-console.log(loggedIn("Ronny"))
+// console.log(loggedIn("Ronny"))
 
 
-//
+// REST parameter
+
+function multipleNum(val1,val2, ...num1){
+    return num1
+}
+
+// console.log(multipleNum(45, 12, 32, 66, 54))
+
+
+// Object value accessing via function
+const user = {
+    username: "Sumit",
+    score: "955"
+}
+
+function objectHandle(anyobj){
+    console.log(`${anyobj.username}'s score is ${anyobj.score}`)
+}
+
+// objectHandle(user)
+objectHandle({      
+    username: "Pritam",
+    score: "877"
+})
+
+
+// Array value accessing via function
+const myarr = [300, 435, 213, 523, 321]
+
+function returnValue(getArrayValue){
+    return getArrayValue[2]
+}
+
+// console.log(returnValue(myarr));
+console.log(returnValue([430, 324, 123, 545, 879]));
+
