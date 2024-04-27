@@ -1,2 +1,2 @@
 # Javascript Learning
-This repository is for my own learing and practising Javascript.
+This repository is for my own learning and practising Javascript.
