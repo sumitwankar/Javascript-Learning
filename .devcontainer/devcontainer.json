@@ -18,7 +18,7 @@
 	 "customizations": {
 		"vscode": {
 			"extensions": [
-				"PKief.material-icon-theme",
+				"vscode-icons-team.vscode-icons",
 				"tal7aouy.theme"
 			],
 			"settings": {
