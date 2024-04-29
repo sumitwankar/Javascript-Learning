@@ -18,8 +18,7 @@
 	 "customizations": {
 		"vscode": {
 			"extensions": [
-				"vscode-icons-team.vscode-icons",
-				"tal7aouy.theme"
+				"PKief.material-icon-theme"
 			],
 			"settings": {
 				"editor.mouseWheelZoom": true,
