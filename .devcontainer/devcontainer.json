@@ -18,8 +18,7 @@
 	 "customizations": {
 		"vscode": {
 			"extensions": [
-				"PKief.material-icon-theme",
-				"ms-vscode.live-server"
+				"ritwickdey.LiveServer"
 			],
 			"settings": {
 				"editor.mouseWheelZoom": true,
