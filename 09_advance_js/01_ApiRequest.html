@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API REQUEST</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        div{
+            border: 2px solid black;
+            margin: 5px;
+            width: 150px;
+        }
+        img, .name, .follower, button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: #212121; color: #fff;">
+
+
+    <!-- 0	UNSENT	Client has been created. open() not called yet.
+    1	OPENED	open() has been called.
+    2	HEADERS_RECEIVED	send() has been called, and headers and     status are available.
+    3	LOADING	Downloading; responseText holds partial data.
+    4	DONE	The operation is complete. -->
+
+    <h4>XMLHttpRequest: readyState property</h4>
+    <table>
+        <ul>
+            <tr>
+                <th>Value</th>
+                <th>State</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>UNSENT</td>
+                <td>Client has been created. open() not called yet.</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>OPENED</td>
+                <td>open() has been called.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>HEADERS_RECEIVED</td>
+                <td>send() has been called, and headers and status are availabl</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>LOADING</td>
+                <td>Downloading; responseText holds partial data.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>DONE</td>
+                <td>The operation is complete.</td>
+            </tr>
+        </ul>
+    </table>
+
+   
+    <div class="card">
+        <img src="" alt="" width="100px" >
+        <h4 class="name"></h1>
+        <p class="follower"></p>
+        <button>Click</button>
+    </div>
+</body>
+
+<script>
+    const requestUrl = 'https://api.github.com/users/BeginnerCoderr'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText)
+            console.log(data);
+            console.log(typeof data);
+            console.log(data.followers);
+
+            // Data displaying block
+            const displayData = function (){
+                document.querySelector(".card img").setAttribute("src" , `${data.avatar_url}`);
+                document.querySelector('.name').innerHTML = `NAME : ${data.name}`;
+                document.querySelector('.follower').innerHTML = `Followers : ${data.followers}`;
+            }
+            // Button code 
+            document.querySelector('button').addEventListener('click', displayData)
+        }
+    }
+    xhr.send()
+
+</script>
+</html>
