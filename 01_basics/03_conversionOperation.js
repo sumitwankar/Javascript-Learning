@@ -12,14 +12,14 @@ let valueInNumber = Number(score)
 // console.log(typeof(valueInNumber)); // convert string into number
 // console.log(valueInNumber);
 
-//              type        value
-// 33 =>        number      33
-// "33" =>      string      33
-// "33abc" =>   string      NaN
-// "gamer" =>   string      NaN
-// null =>      object      0
-// undefined => undefined   NaN
-// true/false =>boolean     1/0
+//               Value  -   type  -   AfterType  -  AfterValue
+// 33 =>         33         number    number        33
+// "33" =>       33         string    number        33
+// "33abc" =>    33abc      string    number        NaN
+// "gamer" =>    gamer      string    number        NaN
+// null =>       null       object    number        0
+// undefined =>  undefined  undefined number        NaN
+// true/false => true       boolean   number        1
 
 
 // BOOLEAN
