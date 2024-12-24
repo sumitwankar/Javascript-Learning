@@ -1,8 +1,8 @@
-//  Primitive = call by value , copy original value 
+//  Primitive datatypes = call by value , copy original value 
 
 //  7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
-
+// JavaScript is a dynamically typed language. Because data type will automatically assigned at the time of compilation or code execution. 
 const score = 100
 const scoreValue = 100.3
 
@@ -13,12 +13,12 @@ let userEmail; // undefined value
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-// console.log(id === anotherId);                      
+// console.log(id === anotherId); // false              
 
 const bigNumber = 23141434243242423n
 
 
-// Reference (Non-primitive) > call by reference
+// Non-primitive datatypes = call by reference , reference of original value
 
 // Array
 const heros = ["shaktiman", "naagraj", "doga"];
@@ -34,6 +34,8 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
+
+// typeof 
 // number = number
 // string = string
 // boolean = boolean 
@@ -46,6 +48,8 @@ const myFunction = function(){
 // array = object
 // function = function(object)
 
+
+/************STACK AND HEAP **************/
 // Stack (Primitive) = it is use copy value
 // Heap (Non-Primitive) = it is use original value
 
