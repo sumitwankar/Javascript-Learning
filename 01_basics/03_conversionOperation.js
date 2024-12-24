@@ -32,6 +32,7 @@ let booleanIsLogged = Boolean(isLoggedIn)
 // 0 => false
 // "" => false
 // "Java" => true
+// null = false
 
 
 // STRING
