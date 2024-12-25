@@ -26,11 +26,13 @@ console.log(Math.floor(4.9));
 console.log(Math.min(4, 3, 6, 8));
 console.log(Math.max(4, 3, 6, 8));
 
-console.log(Math.random());
-console.log((Math.random()*10) + 1);
-console.log(Math.floor(Math.random()*10) + 1);
+console.log(Math.random()); // output between 0 and 1.  ex- 0.342352352
+console.log(Math.random() * 10); // ex  output  3.42352352
+console.log((Math.random() * 10) + 1);  // it means output alawys 1 and greater than 1 
+console.log(Math.floor(Math.random()*10) + 1); // The largest integer smaller than or equal to Math.random()
+
 
 const min = 10
 const max = 20
-
+ 
 console.log(Math.floor(Math.random() * (max - min + 1)) + min)
