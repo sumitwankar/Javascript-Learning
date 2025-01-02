@@ -1,7 +1,7 @@
 const myArr = [1, 2, 3, 4, 5,]
 const mixArr = ["Marvel", "DC", 100, 200]
 
-const myArr2 = new Array(1, 2, 3)
+const myArr2 = new Array(1, 2, 3)  // New method to declare array
 
 // console.log(myArr);
 // console.log(myArr[4]);
@@ -14,9 +14,10 @@ const myArr2 = new Array(1, 2, 3)
 // myArr.unshift(10) // add element fist pos
 // myArr.shift() // remove element fisrt pos
 
-// console.log(myArr.includes(5));
-// console.log(myArr.indexOf(9));
+// console.log(myArr.includes(5));  // check element are present or not
+// console.log(myArr.indexOf(9));  // sarches an array for an element value and returns its position.
 // console.log(myArr.indexOf(4));
+
 
 // const newArr = myArr.join() // convert array into string
 
