@@ -8,7 +8,7 @@ const mySym = Symbol("key1")
 const JsUser = {
     name: "Sumit",
     "full name": "Sumit ok",
-    // mySym: "mykey1",
+    // mySym: "mykey1",  // symbol not declare like this
     [mySym]: "mykey1",
     age: 20,
     location: "Mumbai",
