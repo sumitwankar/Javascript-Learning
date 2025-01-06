@@ -10,7 +10,7 @@ function myName () {
 // myName() // execution
 
 
-// Created function
+// Function created
 function addNumber (number1, number2) {  // parameters
     console.log(number1 + number2);
 }
@@ -36,7 +36,15 @@ const result = addNumber(5, 6)
 // console.log("Result:", result);
 
 
+// Simple return function 
+function logIn(username1){
+    return `this is username : ${username1}`
+}
+const var1 = logIn("ok123ok")
+console.log(var1);
 
+
+// Function default value
 function loggedIn(username = "Ron") {  // default value
     // if(username === undefined){
     if(!username){
