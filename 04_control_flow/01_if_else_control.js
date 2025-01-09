@@ -1,5 +1,4 @@
-// ***if flow
-
+/*** if flow ***/
 const isUserLoggedIn = true
 
 // <, >, <=, >=, ==, !=, ===, !==
@@ -8,8 +7,9 @@ const isUserLoggedIn = true
 //     console.log("Code excuted");
 // }
 
-// ***if else
 
+
+/**** if-else ****/
 const temperature = 41
 
 // if (temperature >= 41){
@@ -21,7 +21,7 @@ const temperature = 41
 // console.log("Always executed");
 
 
-// ***scope error
+/*** Scope Error ***/
 const score = 200
 // if (score > 100) {
 //     let power = "fly"
@@ -29,25 +29,29 @@ const score = 200
 // }
 // console.log(`User power: ${power}`);
 
-// ***one line if syntax (bad code)
-const balance = 1000
 
-// if(balance > 500) console.log("Test");
+
+/*** one line if syntax (bad code) ***/
+const balance = 1000
+// if(balance > 500) console.log("Test");  // implicit scope
 
 // if(balance > 500) console.log("Test"), console.log("test2");
 
-// if (balance < 500) {
-//     console.log("less than 500");
-// } 
-// else if (balance < 750) {
-//     console.log(("less than 750"));
-// }
-// else if(balance < 900) {
-//     console.log("less than 900");
-// }
-// else {
-//     console.log("less than 1200");
-// }
+
+/*** Nested if else ***/
+    // if (balance < 500) {
+    //     console.log("less than 500");
+    // } 
+    // else if (balance < 750) {
+    //     console.log(("less than 750"));
+    // }
+    // else if(balance < 900) {
+    //     console.log("less than 900");
+    // }
+    // else {
+    //     console.log("less than 1200");
+    // }
+
 
 
 // *** && || logical operator
